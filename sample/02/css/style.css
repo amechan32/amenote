@@ -1,0 +1,303 @@
+@charset 'utf-8';
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #3b3b3b;
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+}
+img {
+  max-width: 100%;
+}
+a {
+  color: #3b3b3b;
+}
+a:hover {
+  opacity: 0.7;
+}
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 0 auto;
+}
+.sec-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 72px;
+  margin-top: 120px;
+}
+
+/* ------------------------------------------
+Page-top
+------------------------------------------ */
+#page-top {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: #bbb;
+  opacity: 0.6;
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  z-index: 10;
+  transition: all 0.3s;
+}
+#page-top:hover {
+  opacity: 1;
+  background: #222;
+}
+#page-top a {
+  padding: 10px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#page-top a:hover {
+  opacity: 1;
+}
+#page-top i {
+  font-size: 25px;
+}
+
+/* ------------------------------------------
+Header
+------------------------------------------ */
+#header {
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 120px auto 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-logo {
+  font-size: 0;
+  width: 240px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li a {
+  font-size: 1rem;
+  text-decoration: none;
+  display: block;
+  margin-left: 24px;
+}
+nav ul li a i {
+  font-size: 1.25em;
+  line-height: 1;
+}
+
+/* ------------------------------------------
+Mainvisual
+------------------------------------------ */
+.mainvisual img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+/* ------------------------------------------
+About
+------------------------------------------ */
+#about {
+  margin: 160px auto 0;
+}
+.about {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.about img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.about p,
+.about ul {
+  margin-top: 32px;
+}
+.about p:first-child {
+  margin-top: 0;
+}
+.about ul li {
+  margin-top: 4px;
+}
+
+/* ------------------------------------------
+Works
+------------------------------------------ */
+#works ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+#works ul li {
+  width: calc((100% - 48px) / 3);
+}
+
+/* ------------------------------------------
+News
+------------------------------------------ */
+#news .news-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.news-list dt {
+  width: 20%;
+  padding: 16px 0 16px 16px;
+  border-top: 1px solid #ccc;
+  letter-spacing: 0.1em;
+}
+.news-list dd {
+  width: 80%;
+  padding: 16px 0 16px 16px;
+  border-top: 1px solid #ccc;
+}
+.news-list dt:nth-last-child(2) {
+  border-bottom: 1px solid #ccc;
+}
+.news-list dd:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+/* ------------------------------------------
+Contact
+------------------------------------------ */
+form {
+  text-align: center;
+}
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact-form dt {
+  width: 15%;
+  margin-bottom: 8px;
+  text-align: left;
+}
+.contact-form dd {
+  width: 85%;
+  margin-bottom: 8px;
+}
+.inputs {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+}
+.submit-btn {
+  background: #222;
+  color: #fff;
+  border: 1px solid #222;
+  width: 160px;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: all 0.3s;
+}
+.submit-btn:hover {
+  background: #fff;
+  color: #222;
+}
+
+/* ------------------------------------------
+Footer
+------------------------------------------ */
+#footer {
+  background: #222;
+  margin-top: 120px;
+}
+#footer .copyright {
+  color: #fff;
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 8px 0;
+}
+
+/* ------------------------------------------
+SP
+------------------------------------------ */
+@media screen and (max-width: 600px) {
+  #header {
+    justify-content: center;
+    flex-direction: column;
+    margin: 24px 0;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+  .sec-title {
+    margin-top: 80px;
+  }
+  /* ------------------------------------------
+  About
+  ------------------------------------------ */
+  #about {
+    margin: 80px auto 0;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about img {
+    width: auto;
+    height: 240px;
+  }
+
+  /* ------------------------------------------
+  Works
+  ------------------------------------------ */
+  #works ul {
+    flex-direction: column;
+    gap: 16px;
+  }
+  #works ul li {
+    width: 100%;
+  }
+
+  /* ------------------------------------------
+  News
+  ------------------------------------------ */
+  #news .news-list {
+    flex-direction: column;
+  }
+  .news-list dt {
+    width: 100%;
+    padding: 16px 0 0 16px;
+  }
+  .news-list dd {
+    width: 100%;
+    padding: 8px 0 16px 16px;
+    border: 0;
+  }
+  .news-list dt:nth-last-child(2) {
+    border-bottom: 0;
+  }
+
+  /* ------------------------------------------
+  Contact
+  ------------------------------------------ */
+  .contact-form {
+    flex-direction: column;
+  }
+  .contact-form dt {
+    width: 100%;
+    margin-bottom: 4px;
+    text-align: left;
+  }
+  .contact-form dd {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
