@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #333;
+  margin: 16px;
+}
+img {
+  max-width: 100%;
+}
+h2 {
+  margin-top: 40px;
+}
+dt {
+  margin-top: 10px;
+}
+
+input {
+  padding: 4px;
+  font-size: 0.9rem;
+}
+textarea {
+  padding: 8px;
+  width: 300px;
+  height: 100px;
+  font-size: 0.9rem;
+}
+dd {
+  margin-left: 0;
+}
+.memo {
+  margin-top: 16px;
+  font-size: 0.75rem;
+}
+
+#footer p {
+  margin-top: 40px;
+}
